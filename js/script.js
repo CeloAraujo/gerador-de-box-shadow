@@ -18,7 +18,7 @@ class BoxShadowGenerator {
     this.vertical = vertical;
     this.verticalRef = verticalRef;
     this.blur = blur;
-    this.blurRef - blurRef;
+    this.blurRef = blurRef;
     this.spread = spread;
     this.spreadRef = spreadRef;
     this.previewBox = previewBox;
