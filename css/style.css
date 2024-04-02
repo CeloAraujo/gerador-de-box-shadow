@@ -16,7 +16,7 @@ h2 {
 
 #box-shadow-generator {
   display: flex;
-
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -79,6 +79,16 @@ h2 {
   text-align: center;
 }
 
+/* Novas funcionalidades */
+#color-value{
+  min-width: 100px;
+}
+
+#inset{
+  align-self: start;
+  height: 20px;
+  width: 20px;
+}
 /* preview */
 
 #box {
@@ -105,4 +115,36 @@ h2 {
   margin: 0 auto;
   border: 2px solid #000;
   padding: 1rem;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#rules-area:hover{
+  background:linear-gradient(180deg,rgb(146, 145, 145)30%,rgb(236, 168, 21)80%);
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#copy{
+  font-style: italic;
+}
+/* responsividade */
+@media(max-width:425px){
+  #box-shadow-generator{
+    flex-direction: column;
+  }
+  #controls-container,
+  #preview{
+    padding:1rem 2rem;
+  }
+
+  #box{
+    width: 70%;
+    height: 150px;
+    margin: 0 auto;
+  }
+  #generated-rule{
+    margin-top:5.5rem
+  } 
 }
